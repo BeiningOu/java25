@@ -1,13 +1,22 @@
 package project25;
 
-public class javaDataType {
+public class JavaDataType {
 
-    public void referenceDataTypes(){
+    public static void dataTypes(){
 
         // String
-        String greeting = "Hi...";
+        String greeting = "Hi....";
+        String s = "hello";
+
+        // string.length()
 
         int strLength = greeting.length();
+
+        //2. charAt(int index)
+        //Returns the character at the specified index.
+        System.out.println(greeting.charAt(5));
+
+
 
 
 
@@ -21,6 +30,9 @@ public class javaDataType {
     //    Primitive data types
         // - includes byte, short, int, long, float,
         // double, boolean and char
+
+        dataTypes();
+
         int num = 3;
         float floatNum = 3.0f;
         char letterChar = 'f';
