@@ -2,6 +2,8 @@ package project25.dataStructures;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ArrayListPractice {
 
@@ -9,6 +11,8 @@ public class ArrayListPractice {
         // array
         String[] stringArray= {"a","b"};
         System.out.println(stringArray.length);
+        System.out.println(stringArray);// 这样打印出来是object itself
+        System.out.println(Arrays.toString(stringArray));
 
         for(int i = 0; i < stringArray.length; i++){
             System.out.println(stringArray[i]);
@@ -28,8 +32,8 @@ public class ArrayListPractice {
 
         ArrayList<String> stringArrayList = new ArrayList<>();
         System.out.println(stringArrayList);
-        stringArrayList.add("a");
         stringArrayList.add("b");
+        stringArrayList.add("a");
         System.out.println(stringArrayList);
 
         System.out.println(new ArrayList<>(Arrays.asList("a", "b")));
@@ -61,6 +65,16 @@ public class ArrayListPractice {
         //while (list.remove("apple")) {
         //    // 每次删一个，直到没有了
         //}
+
+
+
+        // sort a ArrayList
+
+        stringArrayList.add("a");
+        stringArrayList.add("a1");
+
+        Collections.sort(stringArrayList);
+        System.out.println(stringArrayList);
 
 
 
