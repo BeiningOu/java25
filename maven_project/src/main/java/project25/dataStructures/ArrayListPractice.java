@@ -1,9 +1,6 @@
 package project25.dataStructures;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 public class ArrayListPractice {
 
@@ -75,6 +72,28 @@ public class ArrayListPractice {
 
         Collections.sort(stringArrayList);
         System.out.println(stringArrayList);
+
+
+        // List 用List interface 的时候 ：
+        // 返回固定大小的 List	快速生成固定元素的列表	不支持 add、remove
+        List<String> s1 = Arrays.asList("a","b","c");
+        //s1.add("d");// 这样不可以 ..
+
+        List<String> s2 = new ArrayList<>(Arrays.asList("a", "b", "c"));
+        s2.add("d");  // 这样就可以了
+        System.out.println(s2); // 输出: [a, b, c, d]
+
+        s2.forEach(fruit -> System.out.println(fruit)); // forEach with lambda
+
+        s2.forEach(System.out::println);
+        // using method reference:
+        // 简化 Lambda 表达式，如果 Lambda 中只是调用了某个现成的方法，就可以用方法引用来替代。
+        // 类名/对象名::方法名
+        // 方法引用 ≈ Lambda 简写，只能用在你要“调用已有方法”的时候，不能带额外逻辑。
+
+
+
+
 
 
 
