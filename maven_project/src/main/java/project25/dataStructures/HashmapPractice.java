@@ -39,6 +39,8 @@ public class HashmapPractice {
         HashSet<String> set_car2 = new HashSet<>(Arrays.asList("F1", "F2"));
         System.out.println(set_car2);
 
+        System.out.println(set_car2.contains("F1")); // return true
+
 
 
 
